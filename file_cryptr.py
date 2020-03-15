@@ -7,8 +7,6 @@ import argparse
 from Crypto.Cipher import AES
 
 
-# openssl enc -aes-256-cbc -salt -in file.txt -out file.txt.enc
-
 def encrypt(key, filename, chunksize=64*1024):
     if filename.endswith('.aes'):
         print('[-] File already encrypted. Aborting...')
